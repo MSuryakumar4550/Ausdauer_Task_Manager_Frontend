@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  // Your Node.js Server Port
-  baseURL: 'https://ausdauer-task-manager-backend.onrender.com', 
+  // FIXED: Added '/api' to the end of the URL
+  baseURL: 'https://ausdauer-task-manager-backend.onrender.com/api', 
 });
 
 // Automatically add the token to every request if it exists
